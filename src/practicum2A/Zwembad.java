@@ -1,4 +1,4 @@
-package practicum2;
+package practicum2A;
 
 public class Zwembad {
 	private double breedte;
