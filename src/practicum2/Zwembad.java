@@ -1,14 +1,19 @@
-package practicum2;
+package src.practicum2;
 
 public class Zwembad {
     private double breedte;
     private double lengte;
     private double diepte;
+    private double inhoud;
 
     public Zwembad(double br, double le, double di) {
         breedte = br;
         lengte = le;
         diepte = di;
+        berekenInhoud();
+    }
+    
+    public Zwembad() {	
     }
 
     public double getBreedte() {
@@ -36,6 +41,6 @@ public class Zwembad {
     }
 
     public void berekenInhoud(){
-
+    	inhoud = this.breedte * this.diepte * this.lengte;
     }
 }
