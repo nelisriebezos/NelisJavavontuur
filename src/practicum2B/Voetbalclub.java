@@ -22,7 +22,11 @@ public class Voetbalclub {
 		return aantalVerloren;
 	}
 
-	  public void verwerkResultaat(char ch) {
+	  public String getClubnaam() {
+		return clubnaam;
+	}
+
+	public void verwerkResultaat(char ch) {
 		    if (ch == 'w')
 		      aantalGewonnen = aantalGewonnen + 1;
 		    if (ch == 'g')
@@ -41,7 +45,7 @@ public class Voetbalclub {
 
 	@Override
 	public String toString() {
-		return clubnaam + "          " + aantalGespeeld() + "-" + aantalGewonnen + "-" +  aantalGelijk + "-" + aantalVerloren + "-" + aantalPunten();
+		return clubnaam + "     " + aantalGespeeld() + "-" + aantalGewonnen + "-" +  aantalGelijk + "-" + aantalVerloren + "-" + aantalPunten();
 	}
 	  
 	  
