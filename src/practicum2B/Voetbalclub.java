@@ -14,24 +14,12 @@ public class Voetbalclub {
 		return aantalGewonnen;
 	}
 
-	public void setAantalGewonnen(int aantalGewonnen) {
-		this.aantalGewonnen = aantalGewonnen;
-	}
-
 	public int getAantalGelijk() {
 		return aantalGelijk;
 	}
 
-	public void setAantalGelijk(int aantalGelijk) {
-		this.aantalGelijk = aantalGelijk;
-	}
-
 	public int getAantalVerloren() {
 		return aantalVerloren;
-	}
-
-	public void setAantalVerloren(int aantalVerloren) {
-		this.aantalVerloren = aantalVerloren;
 	}
 
 	  public void verwerkResultaat(char ch) {

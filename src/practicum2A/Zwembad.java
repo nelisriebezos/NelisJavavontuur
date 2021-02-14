@@ -4,7 +4,6 @@ public class Zwembad {
 	private double breedte;
 	private double lengte;
 	private double diepte;
-	private double inhoud;
 
 	public Zwembad(double br, double le, double di) {
 		breedte = br;
@@ -40,7 +39,7 @@ public class Zwembad {
 	}
 
 	public double inhoud() {
-		return inhoud = breedte * lengte * diepte;
+		return breedte * lengte * diepte;
 	}
 
 	@Override
