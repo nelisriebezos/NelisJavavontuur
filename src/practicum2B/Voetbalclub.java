@@ -45,7 +45,7 @@ public class Voetbalclub {
 
 	@Override
 	public String toString() {
-		return clubnaam + "     " + aantalGespeeld() + "-" + aantalGewonnen + "-" +  aantalGelijk + "-" + aantalVerloren + "-" + aantalPunten();
+		return clubnaam + ": " + aantalGespeeld() + "-" + aantalGewonnen + "-" +  aantalGelijk + "-" + aantalVerloren + "-" + aantalPunten();
 	}
 	  
 	  
