@@ -37,7 +37,10 @@ class VoetbalclubTest {
 	
 	@Test
 	void tostringtest() {
-		assertEquals("testClub: 0-0-0-0-0", t1.toString(), "Dit gaat fout");
+		t1.verwerkResultaat('g');
+		t1.verwerkResultaat('w');
+		
+		assertEquals("testClub: 2-1-1-0-4", t1.toString(), "Dit gaat fout");
 	}
 	
 	@Test
