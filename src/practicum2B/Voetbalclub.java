@@ -7,7 +7,11 @@ public class Voetbalclub {
 	private int aantalVerloren;
 
 	public Voetbalclub(String nm) {
-		clubnaam = nm;
+		if (nm == null || nm == "") {
+			this.clubnaam = "FC";
+		} else {
+			this.clubnaam = nm;
+		}
 	}
 
 	public int getAantalGewonnen() {

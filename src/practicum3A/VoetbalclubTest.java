@@ -23,7 +23,7 @@ class VoetbalclubTest {
 	void voetbalclubNaamNull() {
 		t1 = new Voetbalclub(null);
 		
-		assertFalse(t1.getClubnaam() == null, "Naam is leeg, pas automatisch aan naar FC");
+		assertFalse(t1.getClubnaam() == null || t1.getClubnaam() == "", "Naam is leeg, pas automatisch aan naar FC");
 	}
 	
 	@Test
@@ -40,7 +40,7 @@ class VoetbalclubTest {
 		t1.verwerkResultaat('g');
 		t1.verwerkResultaat('w');
 		
-		assertEquals("testClub: 2-1-1-0-4", t1.toString(), "Dit gaat fout");
+		assertEquals("testClub: 2-1-1-0-4", t1.toString(), "De resultaten worden niet goed geprint");
 	}
 	
 	@Test
