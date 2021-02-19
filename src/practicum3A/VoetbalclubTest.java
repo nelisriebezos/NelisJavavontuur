@@ -36,7 +36,7 @@ class VoetbalclubTest {
 	}
 	
 	@Test
-	void tostringtest() {
+	void toStringTest() {
 		t1.verwerkResultaat('g');
 		t1.verwerkResultaat('w');
 		
