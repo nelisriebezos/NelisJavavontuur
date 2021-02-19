@@ -13,5 +13,5 @@ public class Klant {
 	
 	@Override
 	public String toString() {
-		return "Op naam van: Mijnheer " +naam+ " (korting: " +kortingsPercentage+ "%";}
+		return "Op naam van: Mijnheer " +naam+ " (korting: " +kortingsPercentage+ "%)";}
 }
