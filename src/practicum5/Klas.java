@@ -1,4 +1,4 @@
-package pracitcum5;
+package practicum5;
 
 import java.util.ArrayList;
 

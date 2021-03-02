@@ -1,4 +1,4 @@
-package pracitcum5;
+package practicum5;
 
 public class Main {
 	  public static void main(String[] arg) {
