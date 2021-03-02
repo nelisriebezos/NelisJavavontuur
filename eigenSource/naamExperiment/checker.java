@@ -9,7 +9,7 @@ public class checker {
 
 	public String getNaam() {return naam;}
 	public void setNaam(String naam) {this.naam = naam;}
-	public void setNummer(naamExperiment.nummer n1) {this.nummer = n1;}
+//	public void setNummer(naamExperiment.nummer n1) {this.nummer = n1;}
 	
 	public String onderTienBovenDertig() {
 		if (nummer.getNummer() < 10) {
