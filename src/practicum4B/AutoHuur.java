@@ -4,8 +4,7 @@ public class AutoHuur {
 	private int aantalDagen;
 	private Auto gehuurdeAuto;
 	private Klant klant;
-	private String autoHuurInfo1 = "";
-	private String autoHuurInfo2 = "";
+
 	
 	public AutoHuur() {
 	}
@@ -28,7 +27,9 @@ public class AutoHuur {
 
 	@Override
 	public String toString() {
-		
+		String autoHuurInfo1 = "";
+		String autoHuurInfo2 = "";
+	
 		if (gehuurdeAuto == null) {
 			autoHuurInfo1 = "er is geen auto bekend \n"; }
 		else { autoHuurInfo1 = gehuurdeAuto.toString()+"\n";}
