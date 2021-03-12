@@ -22,7 +22,9 @@ public class Auto extends Voertuig{
 
 	public boolean equals(Object obj) {
 		boolean gelijkeObjecten = false;
-		if (obj instanceof Auto) {
+		if (obj instanceof Auto 
+			&& super.equals(obj)
+			&& kenteken.equals(((Auto) obj).kenteken)) {
 			gelijkeObjecten = true;
 		}
 		return gelijkeObjecten;

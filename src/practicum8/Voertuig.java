@@ -13,13 +13,13 @@ public abstract class Voertuig implements Goed {
 
 	public boolean equals(Object obj) {
 		boolean gelijkeObjecten = false;
-		if (obj instanceof Voertuig) {
+		if (obj instanceof Voertuig && type.equals(((Voertuig) obj).type)) {
 			gelijkeObjecten = true;
 		}
 		return gelijkeObjecten;
 	}
 
 	public String toString() {
-		return "Voertuig " + type + " met bouwjaar " + bouwjaar + " heeft een waarde van: " + huidigeWaarde();
+		return "Voertuig " + type + " met bouwjaar " + bouwjaar + " heeft een waarde van: " + String.format("%.2f", huidigeWaarde());
 	}
 }

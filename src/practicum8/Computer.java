@@ -26,14 +26,17 @@ public class Computer implements Goed {
 
 	public boolean equals(Object obj) {
 		boolean gelijkeObjecten = false;
-		if (obj instanceof Computer) {
+		if (obj instanceof Computer && type.equals(((Computer) obj).type) 
+				&& macAdres.equals(((Computer) obj).macAdres)
+				&& aanschafPrijs == (((Computer) obj).aanschafPrijs) 
+				&& productieJaar == ((Computer) obj).productieJaar) {
 			gelijkeObjecten = true;
 		}
 		return gelijkeObjecten;
 	}
 
 	public String toString() {
-		return "Computer " + type + "met productiejaar " + productieJaar + "heeft als mac adres " + macAdres
-				+ " en heeft een warde van: " + huidigeWaarde();
+		return "Computer " + type + " met productiejaar " + productieJaar + " heeft als mac adres " + macAdres
+				+ " en heeft een waarde van: " + String.format("%.2f", huidigeWaarde());
 	}
 }

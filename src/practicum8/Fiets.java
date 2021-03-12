@@ -22,7 +22,9 @@ public class Fiets extends Voertuig{
 	
 	public boolean equals(Object obj) {
 		boolean gelijkeObjecten = false;
-		if (obj instanceof Fiets) {
+		if (obj instanceof Fiets
+				&& super.equals(obj)
+				&& framenummer == ((Fiets) obj).framenummer) {
 			gelijkeObjecten = true;
 		}
 		return gelijkeObjecten;

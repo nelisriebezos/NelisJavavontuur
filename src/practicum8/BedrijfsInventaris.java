@@ -13,13 +13,7 @@ public class BedrijfsInventaris {
 	}
 
 	public void schafAan(Goed g) {
-		boolean welOfNiet = false;
-		for (Goed i : alleGoederen) {
-			if (i.equals(g)) {
-				welOfNiet = true;
-			}
-		}
-		if (welOfNiet == false) {
+		if (!alleGoederen.contains(g)) {
 			if (budget > g.huidigeWaarde()) {
 				alleGoederen.add(g);
 				budget -= g.huidigeWaarde();
