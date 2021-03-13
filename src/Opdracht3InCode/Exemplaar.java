@@ -31,4 +31,9 @@ public class Exemplaar {
 		// TODO Auto-generated method stub
 		
 	}
+	
+	private void sysout() {
+		// TODO Auto-generated method stub
+
+	}
 }
