@@ -15,7 +15,7 @@ public class Transactie {
 		this.regels = regels;
 	}
 
-	public int getDatum() {
+	public int geefDatum() {
 		return datum;
 	}
 

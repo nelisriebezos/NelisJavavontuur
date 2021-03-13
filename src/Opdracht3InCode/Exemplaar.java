@@ -17,8 +17,12 @@ public class Exemplaar {
 	}
 	
 	public boolean isVerhuurd() {
+		for (VerhuurRegel r : regels) {
+			if (r.geefPeriode() == currentDate);
+			status = true;
+			}
 		return status;
-	}
+		}
 
 	public int geefDetails() {
 		return aanschafDatum + serieNr;

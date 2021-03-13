@@ -10,13 +10,9 @@ public class VerhuurProduct extends Product {
 	private List<Exemplaar> exemplaren = new ArrayList<>();
 
 
-public void setExemplaren(Exemplaar exmp) {
-		exemplaren.add(exmp);
-	}
+public void setExemplaren(Exemplaar exmp) {exemplaren.add(exmp);}
 
-	public List<Exemplaar> getExemplaren() {
-	return exemplaren;
-}
+	public List<Exemplaar> getExemplaren() {return exemplaren;}
 
 	public static List<String> geefAlle() {
 		List<String> result = new ArrayList<>();
