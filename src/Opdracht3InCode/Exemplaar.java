@@ -23,4 +23,12 @@ public class Exemplaar {
 		
 	}
 	
+	public int geefDetails() {
+		return serieNr + aanschafDatum;
+	}
+
+	public boolean isVerhuurd() {
+		// TODO Auto-generated method stub
+		
+	}
 }

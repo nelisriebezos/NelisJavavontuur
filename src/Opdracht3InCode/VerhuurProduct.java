@@ -9,18 +9,16 @@ public class VerhuurProduct extends Product {
 	private static List<VerhuurProduct> alleVerhuurProducten = new ArrayList<>();
 	private List<Exemplaar> exemplaren = new ArrayList<>();
 
-	static {
-		alleVerhuurProducten.add(new VerhuurProduct("a"));
-		alleVerhuurProducten.add(new VerhuurProduct("b"));
-		alleVerhuurProducten.add(new VerhuurProduct("c"));
+
+public void setExemplaren(Exemplaar exmp) {
+		exemplaren.add(exmp);
 	}
 
-	public VerhuurProduct(String omschrijving) {
-		super(omschrijving);
+	public List<Exemplaar> getExemplaren() {
+	return exemplaren;
+}
 
-	}
-
-	public static List<String> geefAlle(x) {
+	public static List<String> geefAlle() {
 		List<String> result = new ArrayList<>();
 
 		for (VerhuurProduct p : alleVerhuurProducten) {
@@ -29,14 +27,11 @@ public class VerhuurProduct extends Product {
 		return result;
 	}
 
-	public void setExemplaren(Exemplaar exmp) {
-		exemplaren.add(exmp);
-	}
-
-	public Exemplaar geefBeschikbareExemplaren(int serieNr) {
+	public List<Exemplaar> geefBeschikbareExemplaren() {
 		for (Exemplaar e : exemplaren) {
-			if (serieNr == e.getSerieNr())
-				return e;
+			e.geefDetails();
+			e.isVerhuurd();
 		}
+		return beschikbareExemplaren;
 	}
 }
