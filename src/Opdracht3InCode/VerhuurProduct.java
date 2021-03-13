@@ -28,9 +28,11 @@ public void setExemplaren(Exemplaar exmp) {
 	}
 
 	public List<Exemplaar> geefBeschikbareExemplaren() {
+		List<Exemplaar> beschikbareExemplaren = new ArrayList<>();
+		
 		for (Exemplaar e : exemplaren) {
-			e.geefDetails();
-			e.isVerhuurd();
+			System.out.println("De details zijn: " + e.geefDetails());
+			if (!e.isVerhuurd()) beschikbareExemplaren.add(e);
 		}
 		return beschikbareExemplaren;
 	}
