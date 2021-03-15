@@ -37,6 +37,6 @@ public class Computer implements Goed {
 
 	public String toString() {
 		return "Computer " + type + " met productiejaar " + productieJaar + " heeft als mac adres " + macAdres
-				+ " en heeft een waarde van: " + String.format("%.2f", huidigeWaarde());
+				+ " en heeft een waarde van: " + Utils.euroBedrag(huidigeWaarde());
 	}
 }

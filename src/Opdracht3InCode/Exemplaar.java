@@ -17,10 +17,10 @@ public class Exemplaar {
 	}
 	
 	public boolean isVerhuurd() {
-		for (VerhuurRegel r : regels) {
-			if (r.geefPeriode() == currentDate);
-			status = true;
-			}
+//		for (VerhuurRegel r : regels) {
+//			if (r.geefPeriode() == currentDate);
+//			status = true;
+//			}
 		return status;
 		}
 
