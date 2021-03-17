@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class VerhuurRegel extends TransactieRegel {
 	private int eindDatum;
 	private int aantalDagen;
-	private TransactieRegel transactieregel;
 	private Exemplaar exemplaar;
 
 	public void setExemplaar(Exemplaar exm) {this.exemplaar = exm;}
@@ -14,12 +13,6 @@ public class VerhuurRegel extends TransactieRegel {
 
 	public int geefPeriode() {
 		return getTransactie().geefDatum();
-	}
-
-	public int getEindDatum() {return eindDatum;}
-
-	public void setEindDatum(int eindDatum) {
-		this.eindDatum = eindDatum;
 	}
 	
 	public void creeer() {
