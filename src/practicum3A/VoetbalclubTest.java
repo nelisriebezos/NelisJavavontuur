@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
 import practicum2B.Voetbalclub;
 
 class VoetbalclubTest {
