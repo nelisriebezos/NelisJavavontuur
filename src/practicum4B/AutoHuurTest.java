@@ -50,7 +50,7 @@ class AutoHuurTest {
 		aht.setGehuurdeAuto(at);
 		
 		assertEquals("""
-				autotype: testtype met prijs per dag: 50.0
+				autotype: testtype met prijs per dag: 50,0
 				Op naam van: Mijnheer testklant (korting: 0.0%)
 				aantal dagen: 4 en dat kost 200.0""", aht.toString(), "Error");
 	}
